@@ -1,0 +1,116 @@
+/* start variabales */
+
+/* end variabales */
+
+/* start rules  */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end rules  */
+/* start header */
+.header {
+  padding: 20px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo img {
+  width: 60px;
+}
+.header .link {
+  position: relative;
+}
+.header .link .icon {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30px;
+  justify-content: flex-end;
+}
+.header .link .icon span {
+  height: 3px;
+  background-color: black;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.header .link .icon span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+
+.header .link:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.header .link ul {
+  list-style: none;
+  color: #444;
+  min-width: 200px;
+  text-align: start;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: calc(100% + 20px);
+  right: 0px;
+  margin: 0;
+  padding: 5px 0;
+  display: none;
+}
+.header .link:hover ul {
+  display: block;
+}
+.header .link ul::before {
+  content: "";
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 0px;
+  top: -39px;
+}
+.header .link ul li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.header .link ul li:not(:last-child) {
+  border-bottom: 2px solid #999;
+}
+.header .link ul li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 15px;
+  display: block;
+}
+.header .link ul li a:hover {
+  padding-left: 40px;
+}
+/* end header */
